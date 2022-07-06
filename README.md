@@ -14,3 +14,9 @@
 ### predict_wine_type.py
 > 두 datasets(winequality-red.csv and winequality-white.csv)를 통해  
 > 와인의 type(red인지 white인지) 예측
+
+<br/>
+
+### MNIST.py
+> tensorflow에서 제공해주는 MNIST dataset을 사용하여 이미지를  
+> one-hot encoding 또는 sparse categorical crossentropy 방식을 통해 학습
