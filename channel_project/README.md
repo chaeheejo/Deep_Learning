@@ -45,6 +45,7 @@
 > 과적합은 일어나지 않으나 epoch이 300이어도 최종 loss 값이 0.5에 그침
 
 <br/>
-### dense_concat_eightAndEntire.ipynb
+
+### dense_concat_eightAndEntire.ipynb 
 > 최종 8개의 구간에 대해 convolution layer 대신 dense layer로 진행함
 > 8개의 구간과 더불어 전체 데이터셋을 입력으로 한 모델을 추가시켰더니 과적합을 더 방지할 수 있었음
