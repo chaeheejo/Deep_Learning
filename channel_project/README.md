@@ -35,4 +35,16 @@
 <br/>
 
 ### dense_concat.ipynb
-> 구간을 더 세분하게 나눠 
+> 구간을 더 세분하게 나눠 학습을 진행함
+> 16개의 데이터 구간을 convolution 연산하고, dense layer를 추가해 구간의 특징만을 사용함
+
+<br/>
+
+### reduce_numOf_model.ipynb
+> 8개의 구간으로 데이터 구간을 줄이고, dense layer의 노드 수를 64로 증가해 학습시킴
+> 과적합은 일어나지 않으나 epoch이 300이어도 최종 loss 값이 0.5에 그침
+
+<br/>
+### dense_concat_eightAndEntire.ipynb
+> 최종 8개의 구간에 대해 convolution layer 대신 dense layer로 진행함
+> 8개의 구간과 더불어 전체 데이터셋을 입력으로 한 모델을 추가시켰더니 과적합을 더 방지할 수 있었음
