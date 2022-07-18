@@ -1,28 +1,38 @@
-# Deep_Learning
+# channel project
 
-### data_preparation.py
-> missing value 처리, column 간 unit이 다르기에 표준화 진행  
-
-<br/>
-
-### predict_wine_quality.py
-> 두 datasets(winequality-red.csv and winequality-white.csv)를 통해  
-> 와인의 quality 예측  
+#### 상수관로 진동 센서 데이터로 누수 유형을 분류하는 문제
 
 <br/>
 
-### predict_wine_type.py
-> 두 datasets(winequality-red.csv and winequality-white.csv)를 통해  
-> 와인의 type(red인지 white인지) 예측
+### sparse_categorical.ipynb
+> sparse categorical 손실 함수를 이용
+> 평가지표인 f1 score을 측정할 수 없었음
 
 <br/>
 
-### MNIST.py
-> tensorflow에서 제공해주는 MNIST dataset을 사용하여 이미지를  
-> one-hot encoding 또는 sparse categorical crossentropy 방식을 통해 학습
+### onehot_categorical.ipynb
+> f1 score을 측정하기 위해 one hot encoding을 따로 처리해준 뒤 categorical 손실 함수를 이용
+> overfitting 문제 발견
+> dropout, batch 정규화
 
 <br/>
 
-### channel project
-> [2022년 인공지능 온라인 경진대회 상관수로 누수감지 및 분류 문제](https://aichallenge.or.kr/competition/detail/1/task/9/taskInfo)  
-> 평가지표 : F1 score
+### convolution.ipynb
+> minmax scaling, L2 정규화 
+> 각 주파수별 진동의 특징을 알아내기 위해 convolution 연산
+
+<br/>
+
+### data_analyze.ipynb
+> 데이터의 분포를 파악하기 위해 유형별 데이터셋의 모양, 전체 데이터셋의 모양을 분석
+
+<br/>
+
+### conv_concat.ipynb
+> 분석한 결과를 바탕으로 특징적인 구간을 5개로 나눠 5개의 모델을 생성함
+> 5개의 모델 각각 convolution 연산을 진행한 뒤 concat하여 하나의 출력값으로 만듦
+
+<br/>
+
+### dense_concat.ipynb
+> 구간을 더 세분하게 나눠 
