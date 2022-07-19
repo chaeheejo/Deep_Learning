@@ -49,3 +49,10 @@
 ### dense_concat_eightAndEntire.ipynb 
 > 최종 8개의 구간에 대해 convolution layer 대신 dense layer로 진행함 <br/>
 > 8개의 구간과 더불어 전체 데이터셋을 입력으로 한 모델을 추가시켰더니 과적합을 더 방지할 수 있었음 
+
+<br/>
+
+### conv_convat_eightAndEntire.ipynb
+> 8개의 구간과 전체 데이터셋을 기반으로 모델을 생성해 학습을 진행 <br/>
+> convolution layer를 추가할 때 처음 layer의 노드 개수를 64, 다음 layer를 128로 설정하는게 학습률이 더 좋음 <br/>
+> concat 후 dense layer의 노드 개수는 2048로 촘촘하게 설정함
