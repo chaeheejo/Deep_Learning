@@ -64,3 +64,11 @@
 > convolution layer를 추가할 때 처음 layer의 노드 개수를 64, 다음 layer를 128로 설정하는게 학습률이 더 좋음 <br/>
 > concat 후 dense layer의 노드 개수는 2048로 촘촘하게 설정함 <br/>
 > 최종 train f1 score 87 validation f1 score 93 epoch 200
+
+<br/>
+
+### set_numOf_convNode.ipynb
+> 두개의 convolution layer 중 두번째 layer보다 첫번째 layer를 더 촘촘히 구성하는 것이 학습률이 좋았음 <br/>
+> dropout 비율은 첫번째 layer에 대한 dropout을 0.8, 두번째 layer에 대한 dropout을 0.6으로 진행하는 것이 가장 성능이 좋았음 <br/>
+> concat 후 dense layer은 첫번째 dense를 촘촘하게 구성한 뒤 dropout 비율을 0.8로 잡고, 두번째 dense를 널널하게 가져갔음 <br/>
+> 최종 train f1 score 95 validation f1 score 84 epoch 200
