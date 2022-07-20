@@ -63,7 +63,7 @@
 > 8개의 구간과 전체 데이터셋을 기반으로 모델을 생성해 학습을 진행 <br/>
 > convolution layer를 추가할 때 처음 layer의 노드 개수를 64, 다음 layer를 128로 설정하는게 학습률이 더 좋음 <br/>
 > concat 후 dense layer의 노드 개수는 2048로 촘촘하게 설정함 <br/>
-> 최종 train f1 score 87 validation f1 score 93 epoch 200
+> 최종 train f1 score 93 validation f1 score 87 epoch 200
 
 <br/>
 
