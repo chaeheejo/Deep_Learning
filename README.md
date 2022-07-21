@@ -27,3 +27,8 @@
 > [2022년 인공지능 온라인 경진대회 상관수로 누수감지 및 분류 문제](https://aichallenge.or.kr/competition/detail/1/task/9/taskInfo)  
 > 평가지표 : F1 score  
 > [README.md](https://github.com/chaeheejo/Deep_Learning/blob/main/channel_project/README.md)
+
+<br/>
+
+### yolo-v5
+> coco dataset를 yolo-v5로 학습해 결과 데이터 추출 
